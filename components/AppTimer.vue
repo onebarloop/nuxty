@@ -1,9 +1,6 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
-console.log('hu')
-
 const timer = ref<number>(0)
+
 setInterval(() => {
   timer.value += 1
 }, 1000)

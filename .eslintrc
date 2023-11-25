@@ -6,6 +6,7 @@
   "extends": ["@nuxtjs/eslint-config-typescript", "plugin:prettier/recommended"],
   "rules": {
     "space-before-function-paren": "off",
-    "no-multiple-empty-lines": "off"
+    "no-multiple-empty-lines": "off",
+    "no-console": "off"
   }
 }

@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     cssPath: '~/assets/scss/tailwind.scss'
   },
   typescript: {
-    strict: true
+    strict: true,
+    typeCheck: true
   }
 })
