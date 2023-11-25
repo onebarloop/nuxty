@@ -1,0 +1,9 @@
+@tailwind base;
+
+@layer base {
+  h1 {
+    @apply text-[25px] text-red-500;
+  }
+}
+@tailwind components;
+@tailwind utilities;
