@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h1>Index page</h1>
+    <h1>Homepage</h1>
     <AppTimer />
-    <NuxtLink to="/welcome"> Link to Welcome </NuxtLink>
   </div>
 </template>

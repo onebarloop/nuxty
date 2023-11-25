@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply container mx-auto flex flex-col items-center bg-slate-200 py-12;
+    @apply container mx-auto flex justify-center;
   }
   button {
     @apply rounded bg-red-400 p-2;
