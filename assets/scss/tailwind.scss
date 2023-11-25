@@ -1,9 +1,12 @@
 @tailwind base;
-
-@layer base {
-  h1 {
-    @apply text-[25px] text-red-500;
-  }
-}
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply container mx-auto flex flex-col items-center bg-slate-200 py-12;
+  }
+  button {
+    @apply rounded bg-red-400 p-2;
+  }
+}
