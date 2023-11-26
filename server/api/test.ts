@@ -6,8 +6,12 @@ export default defineEventHandler(async (event) => {
   }
   if (event.req.method === 'POST') {
     const body = await readBody(event)
-    return body
-    // create a blog
-    // return the blog;
+    if (body.message === '') {
+      return {
+        message: 'Please fill out the input field'
+      }
+    } else {
+      return body
+    }
   }
 })

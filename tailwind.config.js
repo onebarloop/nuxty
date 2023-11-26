@@ -2,7 +2,11 @@
 export default {
   content: [],
   theme: {
-    extend: {}
+    extend: {
+      backgroundImage: {
+        'cushion-pattern': "url('~/assets/img/sun.webp')"
+      }
+    }
   },
   plugins: []
 }

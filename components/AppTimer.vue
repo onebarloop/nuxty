@@ -1,8 +1,12 @@
 <script setup lang="ts">
 const timer = ref<number>(0)
 
+const colors = ['text-green-400', 'text-red-400']
+const color = ref(colors[0])
+
 setInterval(() => {
   timer.value += 1
+  color.value = colors[Math.floor(Math.random() * colors.length)]
 }, 1000)
 
 function clickHandler() {
@@ -11,9 +15,9 @@ function clickHandler() {
 </script>
 
 <template>
-  <div class="flex w-36 flex-col items-center rounded border-2 border-slate-500 p-2">
+  <div class="flex h-full w-36 flex-col items-center justify-between rounded border-2 border-slate-500 p-2">
     <h1>Timer</h1>
-    <div class="p-12 text-center">{{ timer }}</div>
+    <div class="animate-ping text-4xl" :class="color">{{ timer }}</div>
     <button @click="clickHandler">Reset</button>
   </div>
 </template>
